@@ -2,7 +2,9 @@ import Link from "next/link";
 import LoadScript from "../components/LoadScript";
 
 export default async function WidgetPage() {
-  const res = await fetch('http://localhost:3009/loadwidget?dataId=171064&dataType=match-table&sport=football&difference=+5&baseUrl=https://cms.footballfirst.com/api/v1&head=match');
+  const res = await fetch(
+    "https://ipublisher-microservices.6lgx.com/loadwidget?dataId=171064&dataType=match-table&sport=football&difference=+5&baseUrl=https://cms.footballfirst.com/api/v1&head=match"
+  );
   const html = await res.text();
 
   return (

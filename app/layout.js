@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link
-          href="http://localhost:3009/assets/css/livematchdetail.min.css"
+          href="https://ipublisher-microservices.6lgx.com/public/assets/css/livematchdetail.min.css"
           rel="stylesheet"
         />
       </head>
