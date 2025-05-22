@@ -1,6 +1,6 @@
 // import LoadScript from "@/app/components/LoadScript";
 
-import Script from "next/script";
+import LoadScript from "@/app/components/LoadScript";
 export default async function WidgetPage({ params }) {
   const { sport, date } = await params;
   const res = await fetch(
@@ -10,11 +10,8 @@ export default async function WidgetPage({ params }) {
 
   return (
     <>
-      <Script
-        src="http://localhost:3009/widget/index.js"
-        strategy="afterInteractive" // avoids blocking, still preloads
-        crossOrigin="anonymous" // matches the automatic preload tag
-      />
+      <LoadScript />
+
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </>
   );
