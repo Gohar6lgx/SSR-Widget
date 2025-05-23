@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 export default function LoadScript() {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://ipublisher-microservices.6lgx.com/client.js";
+    script.src = "http://localhost:3009/client.js";
     script.async = true;
     document.body.appendChild(script);
     return () => {

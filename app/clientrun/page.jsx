@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export default function WidgetPage() {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://ipublisher-microservices.6lgx.com/widget/index.js";
+    script.src = "http://localhost:3009/widget/index.js";
     script.defer = true;
     document.head.append(script);
   }, []);
