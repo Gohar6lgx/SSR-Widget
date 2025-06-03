@@ -10,7 +10,7 @@ export default async function WidgetPage({ params }) {
       process.env.NEXT_PUBLIC_SITEBASE_URL
     }/loadwidget?dataId=171064&dataSSR=ssr&dataDate=${queryDate}&dataType=live-match-detail&dataLive=${
       date === "live" ? "true" : "false"
-    }&sport=football&difference=+5&baseUrl=https://cms.footballfirst.com/api/v1&head=match&dataPath=football-live-centre`
+    }&sport=football&difference=+5&baseUrl=https://cms.cyberstate-tech.com/api/v1&head=match&dataPath=football-live-centre`
   );
   const html = await res.text();
 

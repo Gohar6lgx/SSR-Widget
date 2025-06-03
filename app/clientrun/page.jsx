@@ -16,7 +16,7 @@ export default function WidgetPage() {
       data-type="match-page"
       data-sport="football"
       data-difference="+5"
-      data-base-url="https://cms.footballfirst.com/api/v1"
+      data-base-url="https://cms.cyberstate-tech.com/api/v1"
       data-head="match"
       data-ssr="false"
       data-loadcss="false"

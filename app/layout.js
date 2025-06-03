@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link
+        {/* <link
           href={`https://ipublisher-microservices.6lgx.com/assets/css/livematchdetail.min.css`}
           rel="stylesheet"
-        />
+        /> */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
