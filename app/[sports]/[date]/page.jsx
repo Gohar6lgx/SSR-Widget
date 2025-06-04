@@ -6,9 +6,7 @@ export default async function WidgetPage({ params }) {
   let queryDate =
     date === "live" ? new Date().toISOString().split("T")[0] : date;
   const res = await fetch(
-    `${
-      process.env.NEXT_PUBLIC_SITEBASE_URL
-    }/loadwidget?dataId=171064&dataSSR=ssr&dataDate=${queryDate}&dataType=live-match-detail&dataLive=${
+    `https://ipublisher-microservices.6lgx.com/loadwidget?dataId=171064&dataSSR=ssr&dataDate=${queryDate}&dataType=live-match-detail&dataLive=${
       date === "live" ? "true" : "false"
     }&sport=football&difference=+5&baseUrl=https://cms.cyberstate-tech.com/api/v1&head=match&dataPath=football-live-centre`
   );
