@@ -4,7 +4,7 @@ import LoadScript from "@/app/components/LoadScript";
 export default async function WidgetPage({ params }) {
   const { sport, id } = await params;
   const res = await fetch(
-    `https://ipublisher-microservices.6lgx.com/loadwidget?dataId=${id}&dataSSR=ssr&dataDate=2025-05-19&dataType=match-news&data-head=true&sport=football&difference=+5&baseUrl=https://cms.cyberstate-tech.com/api/v1&head=match&dataPath=football-live-centre&dataTitle=Ftable`
+    `https://ipublisher-microservices.6lgx.com/loadwidget?dataId=${id}&dataSSR=ssr&dataDate=2025-05-19&dataType=cricket-match-live&data-head=true&sport=cricket&difference=+5&baseUrl=https://cms.cyberstate-tech.com/api/v1&head=match&dataTitle=Cricket Info`
   );
   const html = await res.text();
 
